@@ -1,0 +1,7 @@
+{
+  "name": "harness-practice",
+  "version": "1.0.0",
+  "description": "Node.js demo app for Harness CI",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
