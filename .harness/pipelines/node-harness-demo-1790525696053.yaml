@@ -19,6 +19,20 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  type: Run
+                  name: install-and-test
+                  identifier: installandtest
+                  spec:
+                    connectorRef: ghcr
+                    image: node:22-alpine
+                    shell: Sh
+                    command: |-
+                      echo "Installing dependencies..."
+                      npm install
+                      echo "Running tests..."
+                      npm test
+                  description: install-and-test
           platform:
             os: Linux
             arch: Amd64
