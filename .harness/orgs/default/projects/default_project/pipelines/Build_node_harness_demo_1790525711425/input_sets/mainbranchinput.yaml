@@ -1,0 +1,14 @@
+inputSet:
+  name: main-branch-input
+  identifier: mainbranchinput
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_node_harness_demo_1790525711425
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
